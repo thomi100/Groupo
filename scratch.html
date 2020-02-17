@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Groupy App</title>
+    <meta name="description" content="Groupy">
+    <meta name="author" content="Thomas Joos">
+
+</head>
+
+<body>
+    <!-- <script src="js/scripts.js"></script> -->
+    <h1>groupo.app</h1>
+    <div id="box">
+        <h2>Person hinzufügen</h2>
+        <input type="search" id="name" name="name" placeholder="Max Muster">
+        <div id="add">Person hinzufügen</div>
+
+        <!-- Form -->
+
+        <h2>Anzahl Gruppen</h2>
+        <!-- Regler oder so -->
+
+        <div id="create">Gruppe erstellen</div>
+
+        <h2>Hinzugefügte Personen:</h2>
+
+    </div>
+
+</body>
+</html>
+
+<style type="text/css">
+#add {
+    background-color: blue;
+    width: fit-content;
+    height: auto;
+}
+#create {
+    background-color: green;
+    width: fit-content;
+    height: auto;
+}
+</style>
+
+<script type="text/javascript">
+
+var members = [];
+
+function add() {
+    var name = $("#name").val();
+
+    if(name == "") {
+        alert("Bitte gib einen Namen ein.");
+    } else if(name.search(/^[\w.,\s]+$/g) < 0) {
+        alert("Bitte gib nur Buchstaben, Zahlen und Satzzeichen ein.");
+    } else if(members.includes(name)) {
+        alert("Du hast diese Person bereits hinzugefügt.");
+    } else {
+        members[members.length] = name;
+        console.log(members);
+        $("#name").val("");
+
+        $("#box").append('<p class="member">- ' + name + '</p>');
+    }
+
+    $("#name").focus();
+}
+
+$("#name").on('search', function () {
+    add();
+});
+
+$("#add").click(function() {
+    add();
+});
+
+
+$("#create").click(function() {
+    if(members.length > 1) {
+
+        var groups = 3;
+        var count = 0;
+
+        for(var i = 0; i < members.length; i++) {
+            console.log("Gruppe " + count + ": " + members[i]);
+            if(count == (groups - 1)) {
+                count = 0;
+            } else {
+                count++;
+            }
+        }
+
+    } else {
+        alert("Bitte füge mehr Personen der Gruppe hinzu.");
+    }
+
+});
+
+
+</script>
