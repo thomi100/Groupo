@@ -10,6 +10,7 @@ Groupo ist eine Web-App. Erreichbar ist sie unter [diesem Link](https://thomas-j
 
 ## Contribution
 Jeder kann gerne an der Web-App mitarbeiten. Der Code ist nicht perfekt und kann sicherlich noch optimiert werden - nur zu!
+Aktualisiert wird die [Web-App](https://thomas-joos.ch/ref/Groupo/) nach möglichst jedem Commit. 
 
 ## Autoren
 * **Thomas Joos** - *Initial work* - [Webseite](https://thomas-joos.ch/)
