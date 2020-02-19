@@ -5,6 +5,7 @@ html {
 body {
     max-width: 20em;
     height: fit-content;
+    -webkit-box-shadow: 0 0 8px darkgray;
     box-shadow: 0 0 8px darkgray;
     margin: auto;
     margin-top: 5%;
@@ -28,16 +29,17 @@ p.subtitle {
 
 .whitebox {
     text-align: center;
+    -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px gray;
     padding: 0.5em;
     border-radius: 0.5em;
     font-family: 'Roboto', sans-serif;
     border: none;
-
     font-size: 1.1em;
 }
 
 div.button {
+    -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px gray;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -52,16 +54,19 @@ div.button:hover {
     transition: opacity 0.2s;
 }
 #add {
+    -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
     background-color: #0398fc;
     color: white;
 }
 #create {
+    -webkit-box-shadow: 0 0 5px #82cf59;
     box-shadow: 0 0 5px #82cf59;
     background-color: #82cf59;
     color: white;
 }
 #clear {
+    -webkit-box-shadow: 0 0 5px #fc493d;
     box-shadow: 0 0 5px #fc493d;
     background-color: #fc493d;
     color: white;
@@ -69,6 +74,7 @@ div.button:hover {
     font-weight: 600;
 }
 #back {
+    -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
     background-color: #0398fc;
     color: white;
@@ -100,6 +106,8 @@ p.member {
   height: 1.4em;
   background: #ffc421;
   cursor: pointer;
+  border-style: none;
+  -webkit-box-shadow: 0 0 5px darkgray;
   box-shadow: 0 0 5px darkgray;
 }
 
@@ -108,6 +116,8 @@ p.member {
   height: 25px;
   background: #ffc421;
   cursor: pointer;
+  border-style: none;
+  -webkit-box-shadow: 0 0 5px darkgray;
   box-shadow: 0 0 5px darkgray;
 }
 
