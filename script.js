@@ -1,3 +1,5 @@
+var groups = 2;
+
 $(document).ready(function() {
     $(".show").hide();
 
@@ -56,8 +58,6 @@ $(document).ready(function() {
 
 			members = randomized;
 
-			var groups = 3;
-
 			for(var i = 0; i < groups; i++) {
 				$("#box").append('<h2 class="group" id="group' + i + '">Gruppe ' + (i + 1) + ':</h2>');
 			}
@@ -89,3 +89,10 @@ $(document).ready(function() {
         $(".show").hide();
 	});
 });
+
+window.onload = function () {
+    document.querySelector("#slider").addEventListener ("input", function () {
+        groups = this.value;
+       $("#groupcount").text("Gruppen: " + groups);
+    });
+}

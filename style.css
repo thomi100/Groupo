@@ -17,6 +17,7 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 0.1em;
+    margin-top: 0em;
 }
 h2 {
     font-size: 1.5em;
@@ -26,7 +27,7 @@ p.subtitle {
     color: #404752;
 }
 
-input {
+.whitebox {
     text-align: center;
     box-shadow: 0 0 5px gray;
     padding: 0.5em;
@@ -51,13 +52,13 @@ div.button:hover {
     transition: opacity 0.2s;
 }
 #add {
-    box-shadow: 0 0 5px #82cf59;
-    background-color: #82cf59;
+    box-shadow: 0 0 5px #0398fc;
+    background-color: #0398fc;
     color: white;
 }
 #create {
-    box-shadow: 0 0 5px green;
-    background-color: green;
+    box-shadow: 0 0 5px #82cf59;
+    background-color: #82cf59;
     color: white;
 }
 #clear {
@@ -75,4 +76,37 @@ div.button:hover {
 }
 p.member {
     display: none;
+}
+
+.sliderc {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 75%; /* Full-width */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin: auto;
+}
+
+/* Mouse-over effects */
+.sliderc:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.sliderc::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1em; /* Set a specific slider handle width */
+  height: 1.4em; /* Slider handle height */
+  background: #ffc421; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.sliderc::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ffc421; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }
