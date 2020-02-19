@@ -65,7 +65,7 @@ $(document).ready(function() {
 			var count = 0;
 			for(var i = 0; i < members.length; i++) {
 				console.log("Gruppe " + (count + 1) + ": " + members[i]);
-				$('<p>- ' + members[i] + '</p>').insertAfter("#group" + count);
+				$('<p class="groupmember">- ' + members[i] + '</p>').insertAfter("#group" + count);
 				if(count == (groups - 1)) {
 					count = 0;
 				} else {
@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 	$("#back").click(function() {
 	    $(".group").remove();
-	    $(".person").remove();
+	    $(".groupmember").remove();
         $(".hide").show();
         $(".show").hide();
 	});

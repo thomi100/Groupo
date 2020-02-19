@@ -79,34 +79,34 @@ p.member {
 }
 
 .sliderc {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none;
   appearance: none;
-  width: 75%; /* Full-width */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 75%;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
   transition: opacity .2s;
   margin: auto;
 }
 
-/* Mouse-over effects */
 .sliderc:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .sliderc::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
   appearance: none;
-  width: 1em; /* Set a specific slider handle width */
-  height: 1.4em; /* Slider handle height */
-  background: #ffc421; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 1em;
+  height: 1.4em;
+  background: #ffc421;
+  cursor: pointer;
+  box-shadow: 0 0 5px darkgray;
 }
 
 .sliderc::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #ffc421; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  height: 25px;
+  background: #ffc421;
+  cursor: pointer;
+  box-shadow: 0 0 5px darkgray;
 }
