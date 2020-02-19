@@ -3,13 +3,12 @@ html {
     height: 100%;
 }
 body {
-    max-width: 17em;
+    max-width: 20em;
     height: fit-content;
     box-shadow: 0 0 8px darkgray;
     margin: auto;
     margin-top: 5%;
     padding: 2em;
-    padding-bottom: 1em;
     border-radius: 0.2em;
     font-family: 'Roboto', sans-serif;
 }
@@ -49,6 +48,7 @@ div.button {
 }
 div.button:hover {
     opacity: 0.8;
+    -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 #add {
@@ -81,7 +81,7 @@ p.member {
 .sliderc {
   -webkit-appearance: none;
   appearance: none;
-  width: 75%;
+  width: 50%;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -109,4 +109,23 @@ p.member {
   background: #ffc421;
   cursor: pointer;
   box-shadow: 0 0 5px darkgray;
+}
+
+p#github {
+    color: #6f7887;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    right: 1em;
+    bottom: -0.5em;
+    font-size: 1.05em;
+}
+a {
+    color: #6f7887;
+    text-decoration: none;
+}
+a:hover {
+    color: #1f232b;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    transition: color .2s;
 }
