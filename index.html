@@ -9,6 +9,7 @@
     <title>Groupy App</title>
     <meta name="description" content="Groupy">
     <meta name="author" content="Thomas Joos">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
@@ -19,8 +20,6 @@
         <h2>Person hinzufügen</h2>
         <input type="search" id="name" name="name" placeholder="Max Muster">
         <div id="add">Person hinzufügen</div>
-
-        <!-- Form -->
 
         <h2>Anzahl Gruppen</h2>
         <!-- Regler oder so -->
@@ -56,6 +55,8 @@ function add() {
 
     if(name == "") {
         alert("Bitte gib einen Namen ein.");
+    } else if(name.length > 20) {
+        alert("Bitte gib einen kürzeren Namen ein.");
     } else if(name.search(/^[\w.,\s]+$/g) < 0) {
         alert("Bitte gib nur Buchstaben, Zahlen und Satzzeichen ein.");
     } else if(members.includes(name)) {
@@ -79,15 +80,34 @@ $("#add").click(function() {
     add();
 });
 
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
 $("#create").click(function() {
     if(members.length > 1) {
 
-        var groups = 3;
-        var count = 0;
+        var randomized = [];
+        for(var i = 0; i < members.length; i++) {
+            var r = getRndInteger(0, members.length - 1);
+            while(randomized[r] != undefined) {
+                r = getRndInteger(0, members.length - 1);
+            }
+            randomized[r] = members[i];
+        }
 
+        members = randomized;
+
+        var groups = 3;
+
+        for(var i = 0; i < groups; i++) {
+            $("#box").append('<h2 class="group" id="group' + i + '">Gruppe ' + i + ':</h2>');
+        }
+
+        var count = 0;
         for(var i = 0; i < members.length; i++) {
             console.log("Gruppe " + count + ": " + members[i]);
+            $("<p>- " + members[i] + "</p>").insertAfter("#group" + count);
             if(count == (groups - 1)) {
                 count = 0;
             } else {
