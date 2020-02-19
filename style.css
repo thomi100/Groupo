@@ -3,6 +3,76 @@ html {
     height: 100%;
 }
 body {
-    width: 5em;
+    max-width: 17em;
     height: fit-content;
+    box-shadow: 0 0 8px darkgray;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2em;
+    padding-bottom: 1em;
+    border-radius: 0.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+}
+h2 {
+    font-size: 1.5em;
+}
+p.subtitle {
+    margin-top: 0;
+    color: #404752;
+}
+
+input {
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+
+    font-size: 1.1em;
+}
+
+div.button {
+    box-shadow: 0 0 5px gray;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em 5em 0 5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+div.button:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+#add {
+    box-shadow: 0 0 5px #82cf59;
+    background-color: #82cf59;
+    color: white;
+}
+#create {
+    box-shadow: 0 0 5px green;
+    background-color: green;
+    color: white;
+}
+#clear {
+    box-shadow: 0 0 5px #fc493d;
+    background-color: #fc493d;
+    color: white;
+    margin-top: 2em;
+    font-weight: 600;
+}
+#back {
+    box-shadow: 0 0 5px #0398fc;
+    background-color: #0398fc;
+    color: white;
+    margin-top: 2em;
+}
+p.member {
+    display: none;
 }
