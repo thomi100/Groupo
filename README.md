@@ -15,5 +15,10 @@ Aktualisiert wird die [Web-App](https://thomas-joos.ch/ref/Groupo/) nach möglic
 ## Autoren
 * **Thomas Joos** - *Initial work* - [Webseite](https://thomas-joos.ch/)
 
+## Branches
+* **master** - Branch für alle Änderungen, die normal veröffentlicht werden.
+* **experimental** - Branch für experimentelle Änderungen, die nicht veröffentlicht werden und fehlerhaft sein könnten.
+* **beta** - Branch für Code, der möglichst fehlerfrei ist, aber unter spezieller Beta-Anmerkung veröffentlicht wird.
+
 ## Lizenz
 Dieses Projekt ist lizenziert unter der MIT Lizenz - weitere Informationen in der [LICENSE.md](https://github.com/thomi100/Groupo/blob/master/LICENSE.md) Datei.
