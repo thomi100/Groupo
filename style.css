@@ -2,6 +2,7 @@ html {
     width: 100%;
     height: 100%;
 }
+
 body {
     max-width: 20em;
     height: fit-content;
@@ -19,9 +20,22 @@ h1 {
     margin-bottom: 0.1em;
     margin-top: 0em;
 }
+
 h2 {
     font-size: 1.5em;
 }
+
+a {
+    color: #6f7887;
+    text-decoration: none;
+}
+a:hover {
+    color: #1f232b;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
 p.subtitle {
     margin-top: 0;
     color: #404752;
@@ -36,6 +50,7 @@ p.subtitle {
     font-family: 'Roboto', sans-serif;
     border: none;
     font-size: 1.1em;
+    color: white;
 }
 
 div.button {
@@ -53,18 +68,21 @@ div.button:hover {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
+
 #add {
     -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
     background-color: #0398fc;
     color: white;
 }
+
 #create {
     -webkit-box-shadow: 0 0 5px #82cf59;
     box-shadow: 0 0 5px #82cf59;
     background-color: #82cf59;
     color: white;
 }
+
 #clear {
     -webkit-box-shadow: 0 0 5px #fc493d;
     box-shadow: 0 0 5px #fc493d;
@@ -73,6 +91,7 @@ div.button:hover {
     margin-top: 2em;
     font-weight: 600;
 }
+
 #back {
     -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
@@ -80,6 +99,7 @@ div.button:hover {
     color: white;
     margin-top: 2em;
 }
+
 p.member {
     display: none;
 }
@@ -94,11 +114,9 @@ p.member {
   transition: opacity .2s;
   margin: auto;
 }
-
 .sliderc:hover {
   opacity: 1;
 }
-
 .sliderc::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -110,7 +128,6 @@ p.member {
   -webkit-box-shadow: 0 0 5px darkgray;
   box-shadow: 0 0 5px darkgray;
 }
-
 .sliderc::-moz-range-thumb {
   width: 25px;
   height: 25px;
@@ -129,13 +146,12 @@ p#github {
     bottom: -0.5em;
     font-size: 1.05em;
 }
-a {
+
+p#imprint {
     color: #6f7887;
-    text-decoration: none;
-}
-a:hover {
-    color: #1f232b;
-    text-decoration: none;
-    -webkit-transition: color .2s;
-    transition: color .2s;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    left: 1em;
+    bottom: -0.5em;
+    font-size: 1.05em;
 }
