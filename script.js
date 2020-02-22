@@ -5,35 +5,40 @@ $(document).ready(function() {
 
 	var members = [];
 
-	function add() {
+	function add(feedback) {
 		var name = $("#name").val();
 
 		if(name == "") {
-			alert("Bitte gib einen Namen ein.");
+			if(feedback) alert("Bitte gib einen Namen ein.");
 		} else if(name.length > 20) {
-			alert("Bitte gib einen kürzeren Namen ein.");
-		} else if(name.search(/^[\w.,äÄöÖüÜß\s]+$/g) < 0) {
-			alert("Bitte gib nur Buchstaben, Zahlen und Satzzeichen ein.");
+			if(feedback) alert("Bitte gib einen kürzeren Namen ein.");
+		} else if(name.search(/^[\w.,äÄöÖüÜß-\s]+$/g) < 0) {
+			if(feedback) alert("Bitte gib nur Buchstaben, Zahlen und Satzzeichen ein.");
 		} else if(members.includes(name)) {
-			alert("Du hast diese Person bereits hinzugefügt.");
+			if(feedback) alert("Du hast diese Person bereits hinzugefügt.");
 		} else {
 			members[members.length] = name;
+			console.log("Adding '" + name + "'");
 			console.log(members);
 			$("#name").val("");
 
 			$("#box").append('<p class="member hide">- ' + name + '</p>');
 			$(".member").show(300);
+            $("#anz").text("Anzahl: " + members.length);
+
+            $("#hadded").text("Hinzugefügte Personen:");
+
 		}
 
 		$("#name").focus();
 	}
 
 	$("#name").on('search', function () {
-		add();
+		add(true);
 	});
 
 	$("#add").click(function() {
-		add();
+		add(true);
 	});
 
 	$("#clear").click(function() {
@@ -45,6 +50,12 @@ $(document).ready(function() {
 	}
 
 	$("#create").click(function() {
+
+		var name = $("#name").val();
+		if(name != undefined && name != null && name != "") {
+		    add(false);
+		}
+
 		if(members.length > 1) {
 
 			var randomized = [];

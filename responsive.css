@@ -2,13 +2,6 @@
   body {
     box-shadow: 0 0 0 !important;
   }
-
-  #imprint {
-    left: auto !important;
-    right: 1em !important;
-    bottom: 1em !important;
-  }
-
 }
 @media only screen and (max-height: 700px) {
   body {

@@ -50,7 +50,7 @@ p.subtitle {
     font-family: 'Roboto', sans-serif;
     border: none;
     font-size: 1.1em;
-    color: white;
+    color: black;
 }
 
 div.button {
@@ -138,20 +138,16 @@ p.member {
   box-shadow: 0 0 5px darkgray;
 }
 
-p#github {
+p#links {
     color: #6f7887;
     font-family: 'Roboto', sans-serif;
     position: fixed;
     right: 1em;
     bottom: -0.5em;
     font-size: 1.05em;
+    text-align: right;
 }
 
-p#imprint {
-    color: #6f7887;
-    font-family: 'Roboto', sans-serif;
-    position: fixed;
-    left: 1em;
-    bottom: -0.5em;
-    font-size: 1.05em;
+p#anz {
+    font-style: italic;
 }
