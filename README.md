@@ -3,7 +3,7 @@
 Gruppen bilden leicht gemacht: Mit Groupy kannst du kinderleicht zufällig generierte Grupen mit den gewählten Personen erstellen lassen.
 
 ## Erste Schritte
-Groupy ist eine Web-App. Erreichbar ist sie unter [diesem Link](https://groupy.xyz/), später wird eigens eine Domain dafür reserviert. Ziel ist es, Gruppenzuteilungen einfach zu gestelten.
+Groupy ist eine Web-App. Erreichbar ist sie unter [diesem Link](https://groupy.xyz/). Ziel ist es, Gruppenzuteilungen einfach zu gestelten.
 
 ## Idee
 "Teilt euch bitte in zwei Gruppen auf", hört man oft vom Trainer, Lehrer oder von Freunden. "Okay, ähm, zu wem soll ich nun gehen? Mir ist es egal, mit wem ich bin." - "Mir auch." Das sind oft Dialoge, die man jeden Monat, jede Woche oder vielleicht jeden Tag hört. Groupy wurde mit dem Ziel entwickelt, dies zu vereinfachen: "Ich öffne schnell Groupy!" ...und die Probleme sind aus dem Weg geschafft. Namen eingeben, Gruppenanzahl wählen und schon sind die Aufteilungen da. Noch schnell auf der richtigen Seite des Spielfelds positionieren und Anstoss! Ein Beispiel aus dem Fussball. Auf die Idee gekommen ist der Entwickler aber im Tennistraining, als die Gruppeneinteilung schwer fiel.
