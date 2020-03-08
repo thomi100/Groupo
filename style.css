@@ -43,6 +43,7 @@ p.subtitle {
 
 .whitebox {
     text-align: center;
+    -moz-box-shadow: 0 0 5px gray;
     -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px gray;
     padding: 0.5em;
@@ -54,6 +55,7 @@ p.subtitle {
 }
 
 div.button {
+    -moz-box-shadow: 0 0 5px gray;
     -webkit-box-shadow: 0 0 5px gray;
     box-shadow: 0 0 5px gray;
     padding: 0.5em;
@@ -70,6 +72,7 @@ div.button:hover {
 }
 
 #add {
+    -moz-box-shadow: 0 0 5px #0398fc;
     -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
     background-color: #0398fc;
@@ -77,6 +80,7 @@ div.button:hover {
 }
 
 #create {
+    -moz-box-shadow: 0 0 5px #82cf59;
     -webkit-box-shadow: 0 0 5px #82cf59;
     box-shadow: 0 0 5px #82cf59;
     background-color: #82cf59;
@@ -84,6 +88,7 @@ div.button:hover {
 }
 
 #clear {
+    -moz-box-shadow: 0 0 5px #fc493d;
     -webkit-box-shadow: 0 0 5px #fc493d;
     box-shadow: 0 0 5px #fc493d;
     background-color: #fc493d;
@@ -93,6 +98,7 @@ div.button:hover {
 }
 
 #back {
+    -moz-box-shadow: 0 0 5px #0398fc;
     -webkit-box-shadow: 0 0 5px #0398fc;
     box-shadow: 0 0 5px #0398fc;
     background-color: #0398fc;
