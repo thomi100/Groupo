@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 		if(name == "") {
 			if(feedback) alert("Bitte gib einen Namen ein.");
-		} else if(name.length > 20) {
+		} else if(name.length > 32) {
 			if(feedback) alert("Bitte gib einen kürzeren Namen ein.");
 		} else if(name.search(/^[\w.,äÄöÖüÜß-\s]+$/g) < 0) {
 			if(feedback) alert("Bitte gib nur Buchstaben, Zahlen und Satzzeichen ein.");
@@ -23,7 +23,7 @@ $(document).ready(function() {
 			$("#name").val("");
 
 			$("#box").append('<p class="member hide">- ' + name + '</p>');
-			$(".member").show(300);
+			$(".member").show(250);
             $("#anz").text("Anzahl: " + members.length);
 
             $("#hadded").text("Hinzugefügte Personen:");
